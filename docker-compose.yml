@@ -13,5 +13,5 @@ services:
       JDBC_URL: "jdbc:mysql://mysql:3306/ebdb"
       JDBC_USERNAME: "quintoandar"
       JDBC_PASSWORD: "quintoandar"
-    # networks:
-    #   - private
+    networks:
+      - private
