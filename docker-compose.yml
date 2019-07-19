@@ -15,3 +15,8 @@ services:
       JDBC_PASSWORD: "quintoandar"
     networks:
       - private
+
+networks:
+  private:
+    external:
+      name: private      

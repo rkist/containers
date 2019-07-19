@@ -1,7 +1,7 @@
 FROM ubuntu:18.10
 
 RUN apt-get update && \
-    apt-get install -y vim curl git wget zsh mysql-client && \
+    apt-get install -y vim curl git wget zsh mysql-client iputils-ping && \
     apt-get install -y gcc make zlib1g-dev libssl-dev
 
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
