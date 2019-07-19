@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  devenv:
+    container_name: devenv
+    build:
+      context: .
+      dockerfile: devenv.Dockerfile
+    stdin_open: true
+    tty: true
+    command: tail -f /dev/null
+    environment:
+      JDBC_URL: "jdbc:mysql://mysql:3306/ebdb"
+      JDBC_USERNAME: "quintoandar"
+      JDBC_PASSWORD: "quintoandar"
+    # networks:
+    #   - private
